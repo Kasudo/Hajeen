@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOIR LIFT — Gym Apparel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#050505;
+  --card:#0d0d0d;
+  --text:#f5f5f5;
+  --muted:#888;
+  --accent:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+}
+
+nav h1{
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:var(--muted);
+}
+
+nav a:hover{color:white}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  flex-direction:column;
+}
+
+.hero h1{
+  font-size:64px;
+  font-weight:900;
+  letter-spacing:4px;
+}
+
+.hero p{
+  margin-top:15px;
+  color:var(--muted);
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 24px;
+  border:1px solid white;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  color:black;
+}
+
+/* PRODUCTS */
+.products{
+  padding:80px 40px;
+}
+
+.products h2{
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border:1px solid #111;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:white;
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin-top:10px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* PHILOSOPHY */
+.philosophy{
+  padding:80px 40px;
+  text-align:center;
+}
+
+.philosophy h2{
+  font-size:32px;
+}
+
+.philosophy p{
+  max-width:600px;
+  margin:20px auto;
+  color:var(--muted);
+}
+
+/* CTA */
+.cta{
+  padding:80px 40px;
+  text-align:center;
+}
+
+footer{
+  padding:20px;
+  text-align:center;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>NOIR LIFT</h1>
+  <div>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>BUILT IN DARKNESS</h1>
+  <p>No hype. No excuses. Just discipline.</p>
+  <a href="#products" class="btn">SHOP NOW</a>
+</section>
+
+<section class="products" id="products">
+  <h2>Featured Drops</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+      <h3>Oversized Hoodie</h3>
+      <p>Heavyweight. Minimal. Built for cold sessions.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+      <h3>Compression Tee</h3>
+      <p>Engineered for performance and aesthetics.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593032465171-8e0f3dfc4c41">
+      <h3>Gym Joggers</h3>
+      <p>Tapered fit. Maximum comfort.</p>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy">
+  <h2>NOIR PHILOSOPHY</h2>
+  <p>
+    We don’t chase motivation. We build discipline.
+    Every rep, every set, every drop of sweat — earned in silence.
+  </p>
+</section>
+
+<section class="cta">
+  <h2>JOIN THE MOVEMENT</h2>
+  <a href="#" class="btn">ENTER STORE</a>
+</section>
+
+<footer>
+  © 2026 NOIR LIFT — All rights reserved
+</footer>
+
+</body>
+</html>
